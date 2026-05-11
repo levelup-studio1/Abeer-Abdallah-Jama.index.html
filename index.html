@@ -929,6 +929,113 @@ body {
 
 
 <!-- ════════════════════════════════════════
+     WHATSAPP BUSINESS SERVICES
+════════════════════════════════════════ -->
+<style>
+@keyframes wa-card-in {
+  from { opacity:0; transform:translateY(16px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.wa-card { opacity:0; }
+.wa-card.wa-vis { animation: wa-card-in 400ms cubic-bezier(0.23,1,0.32,1) forwards; }
+.wa-card.wa-vis:nth-child(1) { animation-delay:0ms; }
+.wa-card.wa-vis:nth-child(2) { animation-delay:70ms; }
+.wa-card.wa-vis:nth-child(3) { animation-delay:140ms; }
+.wa-card.wa-vis:nth-child(4) { animation-delay:210ms; }
+@media (prefers-reduced-motion:reduce) {
+  .wa-card { opacity:1 !important; animation:none !important; }
+}
+</style>
+
+<!-- Section intro -->
+<div class="slide section-intro" style="background:#060e08; position:relative; overflow:hidden;">
+  <div style="position:absolute;top:-80px;right:-80px;width:420px;height:420px;background:radial-gradient(circle,rgba(37,211,102,.1) 0%,transparent 65%);border-radius:50%;pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-100px;left:20%;width:340px;height:340px;background:radial-gradient(circle,rgba(43,44,232,.07) 0%,transparent 65%);border-radius:50%;pointer-events:none;"></div>
+  <div class="slide-header">
+    <span class="slide-label">Creative Portfolio</span>
+    <span class="slide-year">2026</span>
+  </div>
+  <div>
+    <div class="section-num">06 — WhatsApp Business</div>
+    <div class="section-big" style="color:#fff; font-size:124px; letter-spacing:-5px;">WhatsApp<br>Services.</div>
+  </div>
+</div>
+
+<!-- Services grid -->
+<div class="slide" style="background:linear-gradient(160deg,#0d0d0d 0%,#0d0d0d 60%,#060e08 100%); border-top:1px solid rgba(37,211,102,.12); padding:52px 64px; height:760px; display:flex; flex-direction:column; gap:32px;">
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:8px;">Service Packages</div>
+      <div style="font-size:30px;font-weight:900;color:#fff;letter-spacing:-1.5px;line-height:1;">WhatsApp Business Setup</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding-bottom:4px;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#25D366;display:inline-block;"></span>
+      <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.3);letter-spacing:2px;text-transform:uppercase;">Horumar Solution</span>
+    </div>
+  </div>
+
+  <div class="wa-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;flex:1;">
+
+    <!-- 01 Sales System Setup -->
+    <div class="wa-card" style="background:#141414;border-top:2px solid #25D366;border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <span style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#25D366;">01</span>
+        <span style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.25);background:rgba(255,255,255,.06);padding:4px 9px;border-radius:2px;">Starter</span>
+      </div>
+      <div style="font-size:17px;font-weight:700;color:#fff;letter-spacing:-.5px;line-height:1.2;">Sales System Setup</div>
+      <div style="font-size:13px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;">We build a full ordering system inside WhatsApp so customers can browse and buy without leaving the app. Automated replies handle the orders for you — no manual work needed. Your business stays open 24/7, even when you are not there.</div>
+    </div>
+
+    <!-- 02 Basic Setup -->
+    <div class="wa-card" style="background:#141414;border-top:2px solid rgba(37,211,102,.4);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <span style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(37,211,102,.6);">02</span>
+        <span style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.25);background:rgba(255,255,255,.06);padding:4px 9px;border-radius:2px;">Standard</span>
+      </div>
+      <div style="font-size:17px;font-weight:700;color:#fff;letter-spacing:-.5px;line-height:1.2;">Basic Setup</div>
+      <div style="font-size:13px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;">We set up your WhatsApp Business account the right way — professional profile, product catalog, and auto-replies. Customers get an instant, credible response the moment they message you. Done and live within 24 hours.</div>
+    </div>
+
+    <!-- 03 Growth & Management -->
+    <div class="wa-card" style="background:#141414;border-top:2px solid rgba(37,211,102,.4);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <span style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(37,211,102,.6);">03</span>
+        <span style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.25);background:rgba(255,255,255,.06);padding:4px 9px;border-radius:2px;">Growth</span>
+      </div>
+      <div style="font-size:17px;font-weight:700;color:#fff;letter-spacing:-.5px;line-height:1.2;">Growth &amp; Management</div>
+      <div style="font-size:13px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;">We grow your WhatsApp contact list and send broadcasts to keep customers coming back. We write and send the messages — you just focus on your business. More reach, more sales, less effort.</div>
+    </div>
+
+    <!-- 04 VIP Full Setup -->
+    <div class="wa-card" style="background:linear-gradient(135deg,#1a1508 0%,#141414 70%);border-top:2px solid #C9A84C;border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px;box-shadow:0 0 0 1px rgba(201,168,76,.08),0 8px 40px rgba(201,168,76,.05);">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <span style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;">04</span>
+        <span style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#C9A84C;background:rgba(201,168,76,.1);padding:4px 9px;border-radius:2px;border:1px solid rgba(201,168,76,.2);">VIP</span>
+      </div>
+      <div style="font-size:17px;font-weight:700;color:#fff;letter-spacing:-.5px;line-height:1.2;">VIP Full Setup</div>
+      <div style="font-size:13px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;">Everything in one package — setup, automation, broadcasts, and monthly management. We handle the whole WhatsApp side of your business from start to finish. One team, full support, zero hassle.</div>
+    </div>
+
+  </div>
+
+</div>
+<script>
+(function () {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.querySelectorAll('.wa-card').forEach(function (c) { c.classList.add('wa-vis'); });
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.2 });
+  var c = document.querySelector('.wa-cards');
+  if (c) io.observe(c);
+})();
+</script>
+
+
+<!-- ════════════════════════════════════════
      CLOSING
 ════════════════════════════════════════ -->
 <div class="slide closing">
