@@ -334,8 +334,8 @@ body {
 
   /* IMAGES */
   .img-full { width: 100%; }
-  .img-row  { flex-direction: column; }
-  .img-row .img-col { height: 240px; }
+  .img-row  { flex-direction: column; height: auto !important; }
+  .img-row .img-col { height: 260px; flex: none; }
   .art-pair { flex-direction: column; }
   .art-pair .art-small,
   .art-pair .art-large { width: 100%; height: 240px; }
@@ -345,13 +345,20 @@ body {
   .three-col .col-img { height: 240px; }
   .three-col .col-img img { height: 100%; }
   .img-brief { flex-direction: column; }
-  .img-brief .ib-text { width: 100%; padding: 28px 24px; }
+  .img-brief .ib-img { height: 280px; overflow: hidden; }
+  .img-brief .ib-img img { width: 100%; height: 100%; object-fit: cover; }
+  .img-brief .ib-text { width: 100%; padding: 28px 24px; order: 2; }
   .img-text { flex-direction: column; height: auto; }
   .img-text .it-img { height: 260px; }
   .img-text .it-text { width: 100%; padding: 28px 24px; }
   .it-title { font-size: 28px; }
   .caption-bar { padding: 16px 24px; flex-direction: column; align-items: flex-start; gap: 10px; }
   .caption-tags { justify-content: flex-start; }
+
+  /* AUTOMOTIVE EDITORIAL GRID */
+  .auto-grid { flex-direction: column !important; height: auto !important; }
+  .auto-grid > div:first-child { height: 300px; flex: none !important; width: 100% !important; }
+  .auto-grid > div:last-child  { flex: none !important; width: 100% !important; height: 360px; }
 
   /* WEB DESIGN CASE STUDY */
   .wd-case-slide {
@@ -633,7 +640,7 @@ body {
 </div>
 
 <!-- Editorial grid — Porsche hero + tool icons + supporting shots -->
-<div class="slide" style="display:flex; gap:4px; background:#0a0a0a; height:740px;">
+<div class="slide auto-grid" style="display:flex; gap:4px; background:#0a0a0a; height:740px;">
 
   <!-- Large hero — Porsche -->
   <div style="flex:1.65; overflow:hidden; position:relative;">
