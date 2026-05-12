@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Horumar Solution | Creative Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
@@ -265,6 +266,113 @@ body {
 .closing-year { font-size:12px; font-weight:300; color:rgba(255,255,255,.3); margin-top:4px; letter-spacing:2px; }
 .closing-contacts { text-align:right; display:flex; flex-direction:column; gap:6px; }
 .closing-contact { font-size:13px; font-weight:300; color:rgba(255,255,255,.5); }
+
+/* ── MOBILE RESPONSIVE ───────────────────── */
+@media (max-width: 700px) {
+
+  body { gap: 3px; }
+  .slide { width: 100%; }
+
+  /* COVER */
+  .cover { height: auto; min-height: 100svh; padding: 32px 24px 0; }
+  .cover-hero { bottom: 90px; }
+  .cover-hero-text { font-size: 21vw; letter-spacing: -2vw; }
+  .cover-bottom-bar { padding: 0 24px; height: 60px; }
+  .cover-roles { flex-wrap: wrap; gap: 2px; }
+  .cover-role-sep { margin: 0 6px; }
+  .cover-contact { gap: 14px; }
+
+  /* ABOUT */
+  .about { height: auto; padding: 40px 24px; }
+  .about-body { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .about-big-word { font-size: 20vw; letter-spacing: -2vw; }
+  .about-right { max-width: 100%; padding-bottom: 0; }
+  .about-arrow { width: 56px; height: 56px; margin-bottom: 12px; }
+  .about-text { font-size: 15px; }
+  .about-name-line { margin-top: 20px; }
+
+  /* ABOUT US */
+  .about-me { height: auto; padding: 40px 24px; }
+  .me-big { font-size: 20vw; letter-spacing: -2vw; }
+  .me-grid { grid-template-columns: 1fr 1fr; margin-top: 20px; }
+  .me-card { padding: 18px 14px; }
+  .me-card-value { font-size: 13px; }
+
+  /* EXPERIENCE */
+  .experience { height: auto; padding: 40px 24px; }
+  .exp-big { flex-direction: column; gap: 20px; align-items: flex-start; }
+  .exp-big-word { font-size: 20vw; letter-spacing: -2vw; }
+  .exp-bottom { gap: 20px; flex-wrap: wrap; padding-top: 20px; }
+  .exp-stat-num { font-size: 28px; }
+
+  /* SKILLS */
+  .skills { height: auto; padding: 40px 24px; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skill-card { padding: 24px 16px; }
+  .skill-title { font-size: 18px; padding-top: 16px; }
+  .skill-sub { font-size: 12px; }
+
+  /* SOFTWARE */
+  .software { height: auto; padding: 40px 24px; }
+  .software-grid { grid-template-columns: repeat(3, 1fr); margin-top: 20px; }
+  .sw-card { padding: 20px 8px; gap: 8px; }
+  .sw-icon { font-size: 22px; }
+  .sw-name { font-size: 11px; }
+
+  /* EDU */
+  .edu { flex-direction: column; height: auto; }
+  .edu-left  { padding: 40px 24px; }
+  .edu-right { padding: 40px 24px; }
+  .edu-big      { font-size: 14vw; letter-spacing: -1vw; }
+  .edu-big-dark { font-size: 14vw; letter-spacing: -1vw; }
+
+  /* SECTION INTROS */
+  .section-intro { height: auto; min-height: 240px; padding: 40px 24px; }
+  .section-big { font-size: 15vw; letter-spacing: -2vw; }
+
+  /* IMAGES */
+  .img-full { width: 100%; }
+  .img-row  { flex-direction: column; }
+  .img-row .img-col { height: 240px; }
+  .art-pair { flex-direction: column; }
+  .art-pair .art-small,
+  .art-pair .art-large { width: 100%; height: 240px; }
+  .two-col { flex-direction: column; }
+  .two-col .col { height: 240px; }
+  .three-col { flex-direction: column; height: auto; }
+  .three-col .col-img { height: 240px; }
+  .three-col .col-img img { height: 100%; }
+  .img-brief { flex-direction: column; }
+  .img-brief .ib-text { width: 100%; padding: 28px 24px; }
+  .img-text { flex-direction: column; height: auto; }
+  .img-text .it-img { height: 260px; }
+  .img-text .it-text { width: 100%; padding: 28px 24px; }
+  .it-title { font-size: 28px; }
+  .caption-bar { padding: 16px 24px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .caption-tags { justify-content: flex-start; }
+
+  /* WEB DESIGN CASE STUDY */
+  .wd-case-slide {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+    padding: 40px 24px !important;
+    gap: 40px !important;
+  }
+  .wd-phone {
+    justify-content: center;
+    animation: none !important;
+  }
+
+  /* WHATSAPP SERVICES */
+  .wa-services-slide { height: auto !important; padding: 40px 24px !important; }
+  .wa-cards { grid-template-columns: 1fr !important; }
+
+  /* CLOSING */
+  .closing { height: auto; min-height: 100svh; padding: 40px 24px; }
+  .closing-big { font-size: 20vw; letter-spacing: -2vw; }
+  .closing-bottom { flex-direction: column; gap: 14px; align-items: flex-start; }
+  .closing-contacts { text-align: left; }
+}
 </style>
 </head>
 <body>
@@ -822,7 +930,7 @@ body {
 </div>
 
 <!-- Asli Mills case study -->
-<div class="slide" style="background:linear-gradient(160deg,#0e0e0e 0%,#111 55%,#0c130e 100%); border-top:1px solid rgba(43,44,232,.15); padding:52px 64px; display:grid; grid-template-columns:1fr 252px; gap:72px; align-items:center; height:740px;">
+<div class="slide wd-case-slide" style="background:linear-gradient(160deg,#0e0e0e 0%,#111 55%,#0c130e 100%); border-top:1px solid rgba(43,44,232,.15); padding:52px 64px; display:grid; grid-template-columns:1fr 252px; gap:72px; align-items:center; height:740px;">
 
   <!-- LEFT: text content -->
   <div style="display:flex; flex-direction:column; gap:28px;">
@@ -962,7 +1070,7 @@ body {
 </div>
 
 <!-- Services grid -->
-<div class="slide" style="background:linear-gradient(160deg,#0d0d0d 0%,#0d0d0d 60%,#060e08 100%); border-top:1px solid rgba(37,211,102,.12); padding:52px 64px; height:760px; display:flex; flex-direction:column; gap:32px;">
+<div class="slide wa-services-slide" style="background:linear-gradient(160deg,#0d0d0d 0%,#0d0d0d 60%,#060e08 100%); border-top:1px solid rgba(37,211,102,.12); padding:52px 64px; height:760px; display:flex; flex-direction:column; gap:32px;">
 
   <div style="display:flex;justify-content:space-between;align-items:center;">
     <div style="display:flex;align-items:center;gap:20px;">
